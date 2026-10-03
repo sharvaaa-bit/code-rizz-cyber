@@ -1,0 +1,42 @@
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+nav > h1 {
+    max-width: 600px;
+    color: #fff;;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+li a {
+    position: relative;
+    padding-bottom: 0.45rem;
+    color: #fff;
+}
+
+li a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+li a:hover::after {
+    width: 100%;
+}
